@@ -3,7 +3,7 @@
 # -------------------------------------------------
 title: "Berggorilla Berglaufclub"
 baseurl: ""                     # leer, weil wir GitHub‑Pages unter <username>.github.io/<repo> hosten
-url: "https://berggorillab.github.io/Pfade"   # <-- anpassen
+url: berggorillab.github.io/Pfade"   # <-- anpassen
 
 # -------------------------------------------------
 # jekyll‑auth‑Einstellungen
