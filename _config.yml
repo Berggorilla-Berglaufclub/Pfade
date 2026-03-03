@@ -1,0 +1,18 @@
+# -------------------------------------------------
+# Basis‑Jekyll‑Einstellungen
+# -------------------------------------------------
+title: "Berggorilla Berglaufclub"
+baseurl: ""                     # leer, weil wir GitHub‑Pages unter <username>.github.io/<repo> hosten
+url: "https://berggorillab.github.io/Pfade"   # <-- anpassen
+
+# -------------------------------------------------
+# jekyll‑auth‑Einstellungen
+# -------------------------------------------------
+auth:
+  # Wir setzen die Werte später per Environment‑Variablen (sicher!)
+  username: "<%= ENV['AUTH_USER'] %>"
+  password: "<%= ENV['AUTH_PASS'] %>"
+  # Pfade, die geschützt werden sollen (relative zu /)
+  protected_paths:
+    - "/"                     # alles schützen – das ist das einfachste Setup
+    # - "/about.html"         # einzelne Dateien können hier ergänzt werden
