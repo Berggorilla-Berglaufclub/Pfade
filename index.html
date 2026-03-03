@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Berggorilla Berglaufclub</title>
+
+    <!-- Responsives Layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open‑Source‑Font „Inter“ von Fontsource (via unpkg CDN) -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link href="https://unpkg.com/@fontsource/inter@5.0.13/latin.css" rel="stylesheet">
+
+    <!-- Stil: Schwarz‑Background, Neon‑Text, leichte Glow‑Effekte -->
+    <style>
+        /* Grundlayout */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;               /* schwarzer Hintergrund */
+            color: #0ff;                    /* Basis‑Neon‑Farbe (Cyan) */
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Glüh‑Effekt für Überschriften, Links und Hervorhebungen */
+        h1, h2, a, strong, em {
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 30px #0ff,
+                0 0 40px #0ff;
+        }
+
+        header {
+            background: #111;               /* leicht dunkleres Header‑Band */
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #111;               /* dunkles Feld für den Content */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #0ff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            border-bottom: 2px solid #0ff;
+            padding-bottom: .3rem;
+            font-size: 1.8rem;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: .8rem;
+        }
+
+        a {
+            color: #0ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .time-entry {
+            margin-left: 1.5rem;
+            font-size: .95rem;
+            color: #aaa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: .9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Berggorilla Berglaufclub</h1>
+</header>
+
+<main>
+    <!-- 1. Übersicht der Pfade -->
+    <section id="overview">
+        <h2>Pfade</h2>
+        <ul>
+            <li><a href="#leyberg">Leyberg&nbsp;&nbsp;<span class="time-entry">mm:ss</span></a></li>
+            <li><a href="#loewenburg">Löwenburg&nbsp;&nbsp;<span class="time-entry">mm:ss</span></a></li>
+        </ul>
+    </section>
+
+    <!-- 2. Details Leyberg -->
+    <section id="leyberg">
+        <h2>Leyberg</h2>
+        <ol>
+            <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+                <div class="time-entry">Beispiel: 12:34 – 05.04.2024 – Max Mustermann</div>
+            </li>
+            <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+                <div class="time-entry">Beispiel: 09:58 – 22.08.2024 – Anna Beispiel</div>
+            </li>
+        </ol>
+        <p><a href="#overview">Zurück zur Übersicht</a></p>
+    </section>
+
+    <!-- 3. Details Löwenburg -->
+    <section id="loewenburg">
+        <h2>Löwenburg</h2>
+        <ol>
+            <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+                <div class="time-entry">Beispiel: 15:21 – 12.03.2024 – Lisa Muster</div>
+            </li>
+            <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+                <div class="time-entry">Beispiel: 11:07 – 30.09.2024 – Tom Beispiel</div>
+            </li>
+        </ol>
+        <p><a href="#overview">Zurück zur Übersicht</a></p>
+    </section>
+</main>
+
+<footer>
+    © 2026 Berggorilla Berglaufclub - Berggorillas laufen seit 2025
+</footer>
+</body>
+</html>
