@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
+<script>
+  // Hash deines Passworts (z. B. SHA-256 von "meinpasswort")
+  const correctHash = "ffdee356a4f4faefad4f9a89a582d9d8bf754766db4e866a5f71bbb30027e304";
+
+  async function checkPassword() {
+    const userPassword = prompt("Bitte Passwort eingeben:");
+    if (!userPassword) {
+      alert("Kein Passwort eingegeben!");
+      window.location.href = "https://laufen-im-rheinland.de";
+      return;
+    }
+
+    // Hash das eingegebene Passwort
+    const msgBuffer = new TextEncoder().encode(userPassword);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const userHash = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+
+    if (userHash !== correctHash) {
+      alert("Falsches Passwort!");
+      window.location.href = "https://laufen-im-rheinland.de";
+    }
+  }
+
+  // Passwortabfrage beim Laden der Seite
+  window.addEventListener("load", checkPassword);
+</script>   
 <head>
     <meta charset="UTF-8">
     <title>Berggorilla Berglaufclub</title>
