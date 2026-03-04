@@ -44,7 +44,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: #000;               /* schwarzer Hintergrund */
+            background: #001f3f;               /* tiefes blau */
             color: #00ff00;                    /* Basis‑Neon‑Farbe (grün) */
             font-family: 'Inter', system-ui, sans-serif;
             line-height: 1.6;
@@ -57,7 +57,7 @@
         }
 
         header {
-            background: #111;               /* leicht dunkleres Header‑Band */
+            background: #003366;               /* leicht helleres Header‑Band */
             padding: 2rem 1rem;
             text-align: center;
         }
@@ -65,7 +65,7 @@
         main {
             max-width: 900px;
             margin: 2rem auto;
-            background: #111;               /* dunkles Feld für den Content */
+            background: #003366;               /* dunkles Feld für den Content */
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 0 15px #00ff00;
@@ -126,24 +126,32 @@
 <main>
     <!-- 1. Übersicht der Pfade -->
     <section id="overview">
-        <h2>Pfade</h2>
+        <h2>Benchmark Pfade</h2>
         <ul>
-            <li><a href="#leyberg">Leyberg&nbsp;&nbsp;<span class="time-entry">mm:ss</span></a></li>
+            <li><a href="#leyberg">Leyberg&nbsp;&nbsp;<span class="time-entry">16:28</span></a></li>
             <li><a href="#loewenburg">Löwenburg&nbsp;&nbsp;<span class="time-entry">mm:ss</span></a></li>
+            <li><a href="#schulenburg">Schulenburg&nbsp;&nbsp;<span class="time-entry">35:02</span></a></li>
         </ul>
     </section>
 
     <!-- 2. Details Leyberg -->
     <section id="leyberg">
-        <h2>Leyberg</h2>
+        <h2>Leyberg - Anstieg 252m, Länge 2,17km</h2>
         <ol>
             <li>
-                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
-                <div class="time-entry">an einem regnerischen Tag bei 20°C</div>
+                <strong>16:28</strong> – gelaufen am <em>04.03.2026</em> von <strong>B</strong>
+            <color: #FFEF00;>
+                <div class="time-entry">bei klarem Himmel, 3°C</div>
             </li>
             <li>
                 <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
-                <div class="time-entry">mit ordentlich Training im Gepäck</div>
+              <color: #E0FFFF;>
+                <div class="time-entry">kommt noch</div>
+            </li>
+          <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+              <color: #FF6A00;>
+                <div class="time-entry">kommt noch</div>
             </li>
         </ol>
         <p><a href="#overview">Zurück zur Übersicht</a></p>
@@ -155,15 +163,46 @@
         <ol>
             <li>
                 <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
-                <div class="time-entry">super gut gefühlt</div>
+            <color: #FFEF00;>
+                <div class="time-entry">kommt noch</div>
             </li>
             <li>
                 <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
-                <div class="time-entry">starker Stert, dann schwierige Bodenverhältnisse</div>
+              <color: #E0FFFF;>
+                <div class="time-entry">kommt noch</div>
+            </li>
+          <li>
+                <strong>mm:ss</strong> – gelaufen am <em>dd.mm.yyyy</em> von <strong>XY</strong>
+              <color: #FF6A00;>
+                <div class="time-entry">kommt noch</div>
             </li>
         </ol>
         <p><a href="#overview">Zurück zur Übersicht</a></p>
     </section>
+ <!-- 3. Details Schulenburg -->
+    <section id="schulenburg">
+        <h2>Schulenburg - Anstieg 210m, Länge 6,88km</h2>
+        <ol>
+            <li>
+                <strong>35:02</strong> – gelaufen am <em>20.01.2024</em> von <strong>B</strong>
+            <color: #FFEF00;>
+                <div class="time-entry">bei klarem Himmel, 1°C, etwas glatt, teilweise eisiger Untergrund, etwas Schnee</div>
+            </li>
+            <li>
+                <strong>37:12</strong> – gelaufen am <em>29.07.2023</em> von <strong>B</strong>
+              <color: #E0FFFF;>
+                <div class="time-entry">bedeckter Himmel, 21°C</div>
+            </li>
+          <li>
+                <strong>42:53</strong> – gelaufen am <em>04.02.2023</em> von <strong>B</strong>
+              <color: #FF6A00;>
+                <div class="time-entry">bedeckter Himmel, 7°Ch</div>
+            </li>
+        </ol>
+        <p><a href="#overview">Zurück zur Übersicht</a></p>
+    </section>
+
+  
 </main>
 
 <footer>
